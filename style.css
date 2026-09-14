@@ -1,0 +1,25 @@
+p {
+  color: blue;
+}
+.text {
+  color: purple;
+}
+#text {
+  color: darkred;
+}
+a[href$=".jpg"] {
+  color: red;
+  text-decoration: none;
+}
+div p {
+  color: gold;
+}
+div > .text {
+  color: orange ;
+}
+section + p {
+  color: yellowgreen;
+}
+div.container > section ~ p#text1{
+  color: green;
+}
