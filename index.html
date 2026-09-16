@@ -4,20 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
+  <title>Таблиця Мондріана</title>
 </head>
 <body>
-  <p> Застосовується до тегів р, вага 1</p>
-  <p class="text"> Застосовується до елементів з класом "text", вага 10</p>
-  <p id="text"> Застосовується до елементів з айді "text", вага 100</p>
-  <a href="./img1.jpg"> Застосовується до тегів а з фтрибутом href, значення якого закінчується .jpg , вага 11 </a>
-  <div class="container">
-    <p class="text"> Застосовується до дочірних елементів div з класом "text", вага 11 </p>
-    <section>
-      <p> Застосовується до тегів р вкладених в div, вага 2</p>
-    </section>
-    <p> Застосовується до першого тегу p послідовному тегу section, вага 2 </p>
-    <p id="text1"> Застосовується до тегу р з айді "text", який є дочірним елементим div з айді "text" і послідовним тегу section, вага 113 </p>
-  </div>
+  <table>
+    <tr class="tr1">
+      <td class="td1" colspan="2"></td>
+      <td class="td2" colspan="2"></td>
+      <td class="td3" colspan="2"></td>
+      <td class="td4" rowspan="4"></td>
+    </tr>
+    <tr class="tr2">
+      <td class="td1"></td>
+      <td class="td2" colspan="3" rowspan="2"></td>
+      <td class="td3" colspan="2"></td>
+    </tr>
+    <tr class="tr3">
+      <td class="td1" rowspan="2"></td>
+      <td class="td2"></td>
+      <td class="td3"></td>
+    </tr>
+    <tr class="tr4">
+      <td class="td1" rowspan="2"></td>
+      <td class="td2" rowspan="2"></td>
+      <td class="td3"></td>
+      <td class="td4" colspan="2"></td>
+    </tr>
+    <tr class="tr5">
+      <td class="td1" rowspan="3"></td>
+      <td class="td2"></td>
+      <td class="td3" rowspan="2" colspan="2"></td>
+      <td class="td4" rowspan="3"></td>
+    </tr>
+    <tr class="tr6">
+      <td class="td1" rowspan="2" colspan="2"></td>
+      <td class="td2"></td>
+    </tr>
+    <tr class="tr7">
+      <td class="td1" colspan="3"></td>
+    </tr>
+  </table>
 </body>
-</html> 
+</html>
