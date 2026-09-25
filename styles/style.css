@@ -25,7 +25,6 @@ td {
 
 .con {
   width: 250px;
-  height: 300px;
   font-size: 24px;
   padding: 15px;
   margin: 30px;
@@ -33,12 +32,9 @@ td {
 }
 .con-1 {
   background-image: url(../imeges/image1.jfif) ;
-  /* padding:  15px; */
 }
 .con > p {
-  height: 270px;
   width: 220px;
-  /* min-height: 100%-30px; */
   padding: 5px;
   margin: 0;
 }
@@ -56,13 +52,10 @@ td {
 .con-1 span {
   background-image: url(../imeges/image1.jfif);
   color: rgb(235, 31, 109);
-
-  /* background-color: rgb(255, 255, 255.767); */
 }
 
 .con-2 {
   background-color: black;
-  /* border: 15px solid black; */
 }
 .con-2 > p {
   background-color: rgb(252, 252, 252);
@@ -97,9 +90,6 @@ body > p {
 
 /* Page4 */
 
-/* .con-page4 {
-  
-} */
 .con1-page4 {
   display: block;
   background-color: blue;
