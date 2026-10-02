@@ -1,3 +1,3 @@
-# Home-work-9
+# Home-work-10
 
-## Розробка "Simple Site" за макетом Figma
+## Адаптація "Simple Site" до респонсивного дизайну
