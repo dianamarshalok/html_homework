@@ -5,9 +5,14 @@
   justify-content: $jc;
   align-items: $ai;
 }
-@mixin font($fw: 400, $ls: 1.6px, $lh: 164.063%, $fs: 16px){
+@mixin font($fw: 400, $ls: 1.6px, $lh: 164.063%, $fs: inherit){
   line-height: $lh; 
   letter-spacing: $ls;
   font-weight: $fw;
   font-size: $fs;
 } 
+@mixin responsive($breakpoint){
+  @media screen and (max-width: $breakpoint){
+    @content;
+  }
+}
