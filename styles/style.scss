@@ -1,152 +1,109 @@
+@use "all";
+@use "reset";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style-type: none;
-  border: none;
-  background-color: transparent;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif; 
-  color: #000;
-  font-size: 16px;
-}
+
 .section1{
   padding-left: 21vw;
-  background-color: #EEEFF1;
+  background-color: all.$br1-color;
   padding-block: 80px;
 }
 .menu{
-  display: flex;
-  gap: 50px;
+  @include all.flex();
   margin-bottom: 160px
 }
 .menu__item{
-  font-weight: 400;
-  line-height: 164.063%; 
-  letter-spacing: 1.6px;
+  @include all.font();
 }
 .active{
-  color: var(--Accent, #34547A);
-  font-weight: 500;
-  line-height: 164.063%; 
-  letter-spacing: 1.6px;
+  color: all.$br2-color;
+  @include all.font(500);
 }
 .section1__main{
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  gap: 60px;
+  @include all.flex(60px, column);
   margin: 60px 0;
 }
 .main__heading{
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 164.063%;
-
+  @include all.font(500, none, 164.063%, 48px);
 }
 .main__text{
-  font-weight: 400;
-  line-height: 164.063%;
+  @include all.font(400, none);
   width: 45%;
-  color: #727272;
+  color: all.$text1-color;
 }
 .main__btn{
-  color: #FFF;
-  font-weight: 400;
-  letter-spacing: 1.6px;
-  background-color: #34547A;
+  color: all.$text2-color;
+  background-color: all.$btn-color;
+  @include all.font(400, 1.6px, none);
   padding: 1.7vw 3.5vw;
   width: max-content;
 }
 .section2{
-  color: #F9F9F9;
+  @include all.flex(50px, column, start, center);
+  background-color: all.$br3-color;
   padding: 100px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  align-items: center;
-
 }
 .section__heading{
   text-align: center;
-  font-size: 32px;
-  font-weight: 500;
+  @include all.font(500, none, none, 32px);
 }
 .section__text{
-  color: #727272;
+  color: all.$text1-color;
   text-align: center;
-  font-weight: 400;
-  line-height: 164.063%;
+  @include all.font(400, none);
   width: 35%; 
 }
 .section3{
-  background: var(--Accent, #34547A);
+  background-color: all.$br2-color;
   padding-block: 100px;
 }
 .section3__list{
-  display: flex;
-  justify-content: center;
-  gap: 60px;
+  @include all.flex(60px, row, center,);
 }
 .list__item{
-  display: flex;
-  gap: 20px;
+  @include all.flex(20px);
 }
 .item__textContainer{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.item__textContainer > span:first-child{
-  font-size: 21px;
-  font-weight: 500;
-  color: #FFF;
-}
-.item__textContainer > span:last-child{
-  color: #FFF;
-  font-weight: 400;
-  line-height: 164.063%; 
+  @include all.flex(10px, column);
+  > span:first-child{
+    @include all.font(500, none, none, 21px);
+    color: all.$text2-color;
+  }
+  > span:last-child{
+    color: all.$text2-color;
+  }
 }
 .section4{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 53px;
+  @include all.flex(53px, column, start, center);
+  background-color: all.$br1-color;
   padding-block: 100px;
 }
 .section4__imgBlock{
-  background-image: url(./img/Rectangle5.jpg);
+  @include all.flex(0, row, center, center);
+  background-image: url(../img/Rectangle5.jpg);
   background-size: contain;
   width: 57vw;
   height: 31vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section4__imgBlock svg{
-  width: 9%;
+  svg{
+    width: 9%;
+  }
 }
 .section5{
+  @include all.flex(20px, column);
   padding-block: 50px;
   padding-left: 21vw;
-  background-color: var(--Accent, #34547A);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  background-color: all.$br2-color;
+  > span:first-child{
+    @include all.font(500, none, none, 21px);
+    color: all.$text2-color;
+  }
+  > span:last-child{
+    color: all.$text2-color;
+    font-size: 13px;
+  }
 }
-.section5 > span:first-child{
-  font-size: 21px;
-  font-weight: 500;
-  color: #FFF;
-}
-.section5 > span:last-child{
-  color: #FFF;
-  font-size: 13px;
-  font-weight: 400;
-}
+
 
 @media screen and (max-width: 1440px){
   .section1, .section5{

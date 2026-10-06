@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  font-size: 16px;
+}
+
+.section1 {
+  padding-left: 21vw;
+  background-color: #EEEFF1;
+  padding-block: 80px;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 160px;
+}
+
+.menu__item {
+  line-height: 164.063%;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.active {
+  color: var(--Accent, #34547A);
+  line-height: 164.063%;
+  letter-spacing: 1.6px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.section1__main {
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin: 60px 0;
+}
+
+.main__heading {
+  line-height: 164.063%;
+  letter-spacing: none;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.main__text {
+  line-height: 164.063%;
+  letter-spacing: none;
+  font-weight: 400;
+  font-size: 16px;
+  width: 45%;
+  color: #727272;
+}
+
+.main__btn {
+  color: #FFF;
+  background-color: var(--Accent, #34547A);
+  line-height: none;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 1.7vw 3.5vw;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.section2 {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #F9F9F9;
+  padding: 100px 0;
+}
+
+.section__heading {
+  text-align: center;
+  line-height: none;
+  letter-spacing: none;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.section__text {
+  color: #727272;
+  text-align: center;
+  line-height: 164.063%;
+  letter-spacing: none;
+  font-weight: 400;
+  font-size: 16px;
+  width: 35%;
+}
+
+.section3 {
+  background-color: var(--Accent, #34547A);
+  padding-block: 100px;
+}
+
+.section3__list {
+  display: flex;
+  gap: 60px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.list__item {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+.item__textContainer {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.item__textContainer > span:first-child {
+  line-height: none;
+  letter-spacing: none;
+  font-weight: 500;
+  font-size: 21px;
+  color: #FFF;
+}
+.item__textContainer > span:last-child {
+  color: #FFF;
+}
+
+.section4 {
+  display: flex;
+  gap: 53px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #EEEFF1;
+  padding-block: 100px;
+}
+
+.section4__imgBlock {
+  display: flex;
+  gap: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/Rectangle5.jpg);
+  background-size: contain;
+  width: 57vw;
+  height: 31vw;
+}
+.section4__imgBlock svg {
+  width: 9%;
+}
+
+.section5 {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-block: 50px;
+  padding-left: 21vw;
+  background-color: var(--Accent, #34547A);
+}
+.section5 > span:first-child {
+  line-height: none;
+  letter-spacing: none;
+  font-weight: 500;
+  font-size: 21px;
+  color: #FFF;
+}
+.section5 > span:last-child {
+  color: #FFF;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1440px) {
+  .section1, .section5 {
+    padding-left: 12vw;
+  }
+  .menu {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .section3__list {
+    gap: 40px;
+  }
+  .section__text {
+    width: 45%;
+  }
+  .main__text {
+    width: 50%;
+  }
+  .section1 {
+    padding-block: 50px;
+  }
+  .section2 {
+    padding-block: 60px;
+    gap: 30px;
+  }
+  .section3 {
+    padding-block: 60px;
+  }
+  .section4 {
+    padding-block: 60px;
+    gap: 40px;
+  }
+  .section5 {
+    padding-block: 35px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section3 {
+    padding: 5vh;
+  }
+  .section3__list {
+    flex-wrap: wrap;
+    -moz-column-gap: 82px;
+         column-gap: 82px;
+  }
+  .section__text {
+    width: 55%;
+  }
+  .main__text {
+    width: 65%;
+  }
+  .main__btn {
+    padding-block: 2vw;
+  }
+  .section1__main {
+    gap: 40px;
+  }
+  .section2 {
+    padding-block: 50px;
+  }
+  .section3 {
+    padding-block: 50px;
+  }
+  .section4 {
+    padding-block: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 15px;
+  }
+  .section1, .section5 {
+    padding-inline: 5vw;
+  }
+  .menu {
+    gap: 5vw;
+    justify-content: center;
+  }
+  .main__heading {
+    font-size: 40px;
+  }
+  .main__text {
+    width: 85%;
+  }
+  .main__btn {
+    padding: 2.5vw 3.8vw;
+  }
+  .section__heading {
+    font-size: 26px;
+  }
+  .section__text {
+    width: 82%;
+  }
+  .item__textContainer > span:first-child {
+    font-size: 18px;
+  }
+  .section5 > span:first-child {
+    font-size: 18px;
+  }
+  .section5 > span:last-child {
+    font-size: 12px;
+  }
+  .section4__imgBlock {
+    width: 80vw;
+    height: 43.3vw;
+  }
+  .section2, .section4 {
+    padding-block: 40px;
+    gap: 25px;
+  }
+  .section5 {
+    padding-block: 25px;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 14px;
+  }
+  .section1, .section5 {
+    padding: 20px 10px;
+  }
+  .menu {
+    gap: 2.5vw;
+    -moz-column-gap: 2.5vw;
+         column-gap: 2.5vw;
+    row-gap: 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .main__heading {
+    font-size: 34px;
+  }
+  .section1__main {
+    margin-block: 60px 30px;
+    gap: 20px;
+  }
+  .section__heading {
+    font-size: 22px;
+  }
+  .section__text {
+    width: 90%;
+  }
+  .section3 {
+    padding: 30px 0;
+  }
+  .item__textContainer > span:first-child {
+    font-size: 16px;
+  }
+  .section5 > span:first-child {
+    font-size: 16px;
+  }
+  .section5 > span:last-child {
+    font-size: 11px;
+  }
+  .section4__imgBlock {
+    width: 95vw;
+    height: 51.4vw;
+  }
+  .section2, .section4 {
+    padding-block: 25px;
+    gap: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */

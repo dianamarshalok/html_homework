@@ -1,3 +1,3 @@
-# Home-work-10
+# Home-work-11
 
-## Адаптація "Simple Site" до респонсивного дизайну
+## Рефакторинг "Simple Site" з використанням SCSS
