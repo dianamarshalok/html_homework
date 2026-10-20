@@ -1,0 +1,97 @@
+
+.logo{
+  height: 50px;
+}
+.navbar{
+  border-bottom: 3px solid #ffae00;
+  padding: 0;
+}
+.navbar-nav{
+  gap: 35px;
+}
+.nav-link{
+  padding-block: 10px;
+}
+.container-fluid{
+  gap: 35px;
+}
+.active{
+  font-weight: 600;
+}
+.drawer-header{
+  justify-content: space-between;
+  padding: 10px;
+}
+.navbar-nav{
+  align-items: center;
+}
+aside{
+  max-height: 90vh;
+}
+.card__ing{
+  height: 250px;
+  object-fit: cover;
+}
+.card-body{
+  padding: 15px;
+}
+.card__span{
+  color: #d49203;
+}
+.card-container{
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+footer{
+  padding: 30px 45px;
+  background-color: #d492032a;
+}
+@media screen and (max-width: 768px){
+  .con--main{
+    flex-wrap: wrap;
+  }
+  aside{
+    width: 35vw;
+    height: 370px;
+  }
+  .accordion{
+    width: 65vw;
+  }
+  .card-container{
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+  .card{
+    width: 33vw;
+  }
+  .navbar-nav{
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 426px){
+  .con--main{
+    flex-direction: column;
+  }
+  aside{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    max-height: 300px;
+    overflow-x: scroll;
+  }
+  .accordion{
+    width: 100vw;
+  }
+  aside img{
+    width: 47vw;
+  }
+  .card-container{
+    width: auto;
+    flex-direction: column;
+  }
+  .card{
+    width: 100vw;
+  }
+}
