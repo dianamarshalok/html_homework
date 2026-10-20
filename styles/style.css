@@ -43,7 +43,7 @@ aside{
   overflow-y: scroll;
 }
 footer{
-  padding: 30px 45px;
+  padding: 10px 45px;
   background-color: #d492032a;
 }
 @media screen and (max-width: 768px){
@@ -93,5 +93,9 @@ footer{
   }
   .card{
     width: 100vw;
+  }
+  footer{
+    flex-direction: column;
+    align-items: start;
   }
 }
